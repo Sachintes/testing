@@ -1,13 +1,13 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $lease = $_POST['lease'];
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $phone = $_POST["phone"];
+    $lease = $_POST["lease"];
     $vacantProperties = $_POST["vacantProperties"];
     $propertyLocation = $_POST["propertyLocation"];
 
-    $to = "sachintnm001@gmail.com"; // Change this to your Gmail address
+    $to = "sachintnm001@gmail.com"; // Replace with your Gmail address
     $subject = "Property Lease Inquiry";
 
     $message = "Name: $name\n";
@@ -18,6 +18,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message .= "Property Location: $propertyLocation\n";
 
     $headers = "From: $email";
+
+    // Set the content-type for sending HTML email
+    $headers .= "\r\n" . "Content-type: text/html; charset=UTF-8";
 
     // Attempt to send the email
     if (mail($to, $subject, $message, $headers)) {
