@@ -57,8 +57,7 @@
     </style>
 </head>
 <body>
-
-     <form action="email.php" method="post">
+        <form id="leaseForm" action="email.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -80,8 +79,44 @@
         <label for="propertyLocation">Where are your properties located?</label>
         <input type="text" id="propertyLocation" name="propertyLocation" required>
 
-        <button type="submit">Submit</button>
+        <button type="button" onclick="submitForm()">Submit</button>
     </form>
+
+    <script>
+        function submitForm() {
+            // Perform client-side validation here
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+
+            // Example: Check if name and email are not empty
+            if (name.trim() === '' || email.trim() === '') {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Create a FormData object to send form data
+            var formData = new FormData(document.getElementById('leaseForm'));
+
+            // Create and configure the XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'process_form.php', true);
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+
+            // Set up a callback function to handle the AJAX response
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    alert(xhr.responseText);
+                    // Optionally, reset the form after successful submission
+                    document.getElementById('leaseForm').reset();
+                } else {
+                    alert('Error submitting the form. Please try again.');
+                }
+            };
+
+            // Send the form data asynchronously
+            xhr.send(formData);
+        }
+    </script>
 
 </body>
 </html>
