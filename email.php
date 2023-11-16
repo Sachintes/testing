@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $lease = $_POST["lease"];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $lease = $_POST['lease'];
     $vacantProperties = $_POST["vacantProperties"];
     $propertyLocation = $_POST["propertyLocation"];
 
