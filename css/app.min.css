@@ -17146,9 +17146,12 @@ section+section {
 }
 
 .section-testimonials ul.rate>li {
+    color: white;
+    padding: 4px;
+    background-color: #00b67a;
     display: inline-block;
-    font-size: .9444444444rem;
-    vertical-align: middle
+    font-size: 12px;
+    vertical-align: middle;
 }
 
 .section-testimonials .location {
