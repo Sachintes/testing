@@ -1,10 +1,22 @@
 "use strict";
 
 const forms = document.forms;
+
 if (forms.length) {
   for (const form of forms) {
+    const file = form.querySelector('input[type="file"]');
+    if (file) {
+      file.addEventListener('change', formAddFile);
+    }
     form.addEventListener('submit', formSubmitAction);
   }
+}
+
+function formAddFile(e) {
+  const formInputFile = e.target;
+  const formFiles = formInputFile.files;
+  const fileName = formFiles.length ? formFiles[0].name : '';
+  formInputFile.parentElement.nextElementSibling.innerHTML = fileName;
 }
 
 async function formSubmitAction(e) {
@@ -16,17 +28,26 @@ async function formSubmitAction(e) {
 
   form.classList.add('form-sending');
 
-  const response = await fetch(formAction, {
-    method: formMethod,
-    body: formData
-  });
+  try {
+    const response = await fetch(formAction, {
+      method: formMethod,
+      body: formData
+    });
 
-  if (response.ok) {
-    alert('Form sent!');
-    form.classList.remove('form-sending');
-    form.reset();
-  } else {
-    alert('Error');
+    if (response.ok) {
+      alert('Form sent!');
+      form.classList.remove('form-sending');
+
+      const formInputFile = form.querySelector('input[type="file"]');
+      if (formInputFile) {
+        formInputFile.parentElement.nextElementSibling.innerHTML = '';
+      }
+      form.reset();
+    } else {
+      throw new Error('Form submission failed');
+    }
+  } catch (error) {
+    alert('Error: ' + error.message);
     form.classList.remove('form-sending');
   }
 }
