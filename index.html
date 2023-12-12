@@ -3,9 +3,9 @@
     <meta charset="utf-8">
     <!-- <base href="/"> -->
 
-    <title>Property Sales & Lettings in Manchester - Greenco Property Group</title>
-    <meta name="description" content="Greenco: Your trusted Canadian property management company. Enjoy peace of mind with our rental guarantee and transparent, all-inclusive fee structure.">
-
+    <title>Property Sales and Lettings in Manchester - Greenco Property Group</title>
+    <meta name="description" content="Greenco Estate Agents in Greater Manchester and surrounding areas. Specialising in property sales and lettings and management services.">
+		<meta name="keywords" content="estate agent, agency, property for sale, letting, buying, landlords, tenants, sales, selling, rentals, renting, conveyancing, valuations, appraisals, england, uk">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="icon" href="images/fav-icon-logo.png">
@@ -13,12 +13,9 @@
     <link rel="apple-touch-icon" sizes="76x76" href="images/fav-icon-logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav-icon-logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/fav-icon-logo.png">
-    <link rel="manifest" href="images/site.webmanifest">
     <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#a2c533">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-
-    <meta property="og:image" content="images/dist/preview.jpg">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -29,7 +26,7 @@
     <!-- Jquery UI autocomplete -->
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <!-- PhotoSwipe -->
-    <link rel="stylesheet" href="css/photoswipe.css">
+    <!-- <link rel="stylesheet" href="css/photoswipe.css"> -->
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
@@ -55,28 +52,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav align-items-center ms-auto">
                         <li class="nav-item hide-sticky">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="https://greenco.co.uk/">Home</a>
                         </li>
                         <li class="nav-item hide-sticky">
-                            <a class="nav-link" href="">About Us</a>
-                        </li>
-                        <li class="nav-item hide-sticky dropdown"> <!-- Added 'dropdown' class here -->
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Search properties
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <!-- Add dropdown items here -->
-                                <a class="dropdown-item" href="#">Option 1</a>
-                                <a class="dropdown-item" href="#">Option 2</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Another Option</a>
-                            </div>
+                            <a class="nav-link" href="https://greenco.co.uk/about">About Us</a>
                         </li>
                         <li class="nav-item hide-sticky">
-                            <a class="nav-link" href="">Contact</a>
+                            <a class="nav-link" href="https://greenco.co.uk/contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-primar" href="/estimate">Get a free estimate</a> <!-- Corrected 'btn-primar' to 'btn-primary' -->
+                            <a class="btn btn-primar" href="#">Get a free estimate</a> <!-- Corrected 'btn-primar' to 'btn-primary' -->
                         </li>
                     </ul>
                 </div>
@@ -94,21 +79,334 @@
 
 
 
+<style>
+    
+/* 3. hero-section */
+.hero-section {
+    position: relative;
+    padding-top: 70px;
+    overflow: hidden;
+    background-image: url("https://greenco.co.uk/images/img_1.png");
+    /* background-color: #fffacd; */
+    padding-bottom: 70px;
+}
+.hero-section img.shaps {
+    animation: float 20s infinite;
+    right: 45%;
+    top: 24%;
+    z-index: 0;
+}
+.hero-text {
+    position: relative;
+    margin-top: 60px;
+    width: 84%;
+}
+.hero-text h2 {
+    padding-bottom: 30px;
+    line-height: 74px;
+    font-weight: 800;
+}
+.hero-text h3 {
+    font-weight: 800;
+    font-size: 60px;
+    padding-top: 16px;
+    COLOR: #21a56e;
+}
+img.video-img {
+    margin-right: 50px;
+}
+.circle-layer {
+    animation-name: rotateme;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateme;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotateme;
+    -moz-animation-duration: 15s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: rotateme;
+    -ms-animation-duration: 15s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: rotateme;
+    -o-animation-duration: 15s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+@keyframes rotateme {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotateme {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotateme {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to { 
+        -moz-transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotateme {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to { 
+        -o-transform: rotate(360deg);
+    }
+}
 
 
+@media (min-width: 862px){
+.col-lg-7 {
+    width: 55.333333%;
+}}
+@media (min-width: 862px){
+.col-lg-5 {
+    width: 44.666667%;
+}}
+.hero-text h3 span {
+    COLOR: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.hero-text ul li img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    background-color: #ffffff30;
+    margin-right: 17px;
+    padding: 7px;
+}
+/* .video {
+    display: flex;
+    align-items: end;
+    margin-top: 40px;
+} */
+.hero-text > img {
+    margin-left: auto;
+    display: block;
+    height: 263px;
+    margin-top: 30px;
+}
+ul.stars {
+    justify-content: center;
+    background-color: #000;
+    display: inline-flex;
+    padding: 2px 10px;
+    border-radius: 26px;
+    margin-bottom: 14px;
+    margin-left: 20px;
+}
+ul.stars li {
+    padding: 4px 2px;
+    line-height: 0;
+}
+ul.stars li i {
+    color: #ffd545;
+    font-size: 14px;
+}
 
 
+.group-img{
+    position: relative;
+}
+.group-img svg {
+    position: absolute;
+    right: 25px;
+    width: 22px;
+    height: auto;
+    top: 21px;
+}
+
+.testimonial-card {
+    max-width: 400px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 11px 0px 12px;
+    text-align: left;
+        }
 
 
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 0px;
+            color: #000;
+        }
+        .trustpilot-icon {
+            width: 100px; /* Adjust the size as needed */
+            margin-top: -30px;
+        }
+        
+
+        /* form */
+
+        .wrapper {
+            flex: 1 1 auto;
+max-width: 25rem;
+            background-color: #fff;
+            box-shadow: 10px 10px 0px #000;;
+            padding: 20px;
+            border-radius: 30px;
+        }
+        .form {
+            display: grid;
+            gap: 15px;
+        }
+        ::placeholder {
+    color: #000000; /* You can replace #999 with the color you prefer */
+}
+        .form_input {
+             margin-bottom: 10px;
+            padding: 10px 0px 10px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        /* .form_options {
+            margin-bottom: 15px;
+        } */
+
+        .options-form_title {
+            margin-top: -2px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        textarea.form_textarea {
+    height: 70px;
+    margin-bottom: 15px;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+        .options-form_item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .options-form_input {
+            margin-right: 8px;
+        }
+
+        .options-form_text {
+            font-size: 16px;
+        }
+
+        .button {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #a2c533;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #000;
+        }
+        
+        .form-sending{
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        @media (max-width: 479.98px){
+            .wrapper {
+                margin: 20px !important;
+            }
+        }
+
+        
+</style>
+
+<!-- header end -->
+<section class="hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="hero-text">
+            <h1 style="color: white; margin-bottom: 20px;">Ready to Scale Your <br class="d-none d-xl-inline"> Rental Income with <br> <green>A 5-Year Guarantee?</green></h1>
+            <p style="color: white; margin-bottom: 20px;">FOR MULTIPLE PROPERTY OWNERS AND INVESTORS</p>
+            <div class="video">
+              <div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Really satisfied with the service provided by Greenco for moving us to our new rental home."</p>
+                    <p class="testimonial-author">Gabriel</p>
+                    <p>Deansgate, Manchester</p>
+                    <img class="trustpilot-icon" src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg" alt="Trustpilot Icon">
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+        
 
 
+        <div class="wrapper">
+            <h3 style="color: black;
+            font-size: 36px;
+            font-weight: 900;
+            line-height: 46px;
+            margin-bottom: 20px;">Apply Now!</h3>
+            <form method="POST" action="sendmail/sendmail.php" enctype="multipart/form-data" class="form">
+                <div style="display: grid; gap: 15px; grid-template-columns: 1fr 1fr;">
+                    <input required type="text" placeholder="Name" name="name" class="form_input">
+                    <input required type="email" placeholder="E-mail" name="email" class="form_input">
+                </div>
+                <input required type="tel" placeholder="Phone No." name="phone" class="form_input">
+                <div class="form_options options-form">
+                    <h4 class="options-form_title">Are you happy to consider a long term lease of 5 years?</h4>
+                    <label class="options-form_item">
+                        <input checked type="radio" name="like" value="Yes" class="options-form_input">
+                        <span class="options-form_text">Yes</span>
+                    </label>
+                    <label class="options-form_item">
+                        <input type="radio" name="like" value="No" class="options-form_input">
+                        <span class="options-form_text">No</span>
+                    </label>
+                </div>
+                <textarea name="question1" placeholder="How many vacant properties do you have available to let?" class="form_textarea"></textarea>
+                <textarea name="question2" placeholder="Where are your properties located?" class="form_textarea"></textarea>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
 
+      </div>
+    </div>
 
-
-
-
-
-
+  </section>
 
 
 
@@ -119,40 +417,6 @@
         <div class="container">
     <div class="row align-items-center">
         <div class="col-12 col-xl-10">
-            <div class="intro__headings">
-                <h1>Ready to Scale Your <br class="d-none d-xl-inline"> Rental Income with <br> <green>A 5-Year Guarantee?</green></h1>
-            </div>
-        
-    
-            <!-- <div class="subscribe">
-                <form action="#" aria-label="Subscribe form">
-                    <div class="input-group">
-                        <span class="input-group-text">
-                            <i class="icon-search" aria-hidden="true"></i>
-                        </span>
-    
-                        <input type="text" class="form-control subscribeInput" placeholder="Enter your property address" aria-label="Property Address">
-                    </div>
-    
-                    <a class="btn btn-primary" href="/estimate" onclick="return gtag_report_conversion(\" estimate.html\');'="" role="button" type="submit">
-                        <span class="d-none d-md-inline-block">Get a free estimate</span>
-                        <span class="d-md-none">Estimate</span>
-                    </a>
-                </form>
-            </div> -->
-    
-            <span class="info d-none d-xl-block">
-                <span>For multiple property owners and investors</span>
-            </span>
-        </div>
-    
-        <div class="col-12 col-xl-2 d-none d-xl-inline-block">
-            <picture class="img-offset">
-                <source srcset="images/hero-home.png" media="(min-width: 992px)">
-                <source srcset="images/hero-home-mobile.jpg" media="(min-width: 300px)">
-                <img srcset="images/hero-home.png" src="https://i.imgur.com/xvCNFxX.jpg" alt="Propper hero" width="587" height="454">
-            </picture>
-        </div>
     </div>
 </div>
 
@@ -162,7 +426,7 @@
             <picture class="img-offset">
                 <source srcset="images/hero-home.png" media="(min-width: 992px)">
                 <source srcset="images/hero-home-mobile.jpg" media="(min-width: 300px)">
-                <img srcset="images/hero-home.png" src="images/hero-home.png" alt="Propper hero" width="587" height="454">
+                <img srcset="images/hero-home.png" src="images/hero-home.png" alt="Greenco hero" width="587" height="454">
             </picture>
         </div>
     </div>
@@ -208,11 +472,17 @@
             <div class="row">
                 <div class="col-12">
                     <span class="h1 mb-3">
-                        Rent On Time, Every Time: <b>Greencos's Unmatched Assurance</b>.
+                        Rent On Time, Every Time: <b>Greencos's Unmatched Assurance.</b>
                     </span>
     
                     <p class="color-main-dark-blue">
-                        Greenco has the best data and leasing practices which allow us to place tenants that will love your home (just as much as you do),
+                        Social Housing is fast becoming the most popular investment
+strategy amongst property investors. With the promise of
+guaranteed rents, no management fees, minimal
+maintenance and long-term contracts. It certainly sounds like
+the perfect investment. Or is it? <br>
+<br>
+Greenco has the best data and leasing practices which allow us to place tenants that will love your home (just as much as you do),
                         in record time, at the best price.
 
                         We do everything your normal property manager does, just better. No hidden fees, dedicated teams, 24/7 support, professional maintenance,
@@ -222,6 +492,34 @@
             </div>
         </div>
     </section>
+
+
+<section class="section-howto" id="section-howto">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <span class="h1 mb-3">
+                        What is <b>Guaranteed Rent?</b>
+                    </span>
+    
+                    <h3 class="color-main-dark-blue">
+                      <b>  <ol>
+        <li>5-year fixed contract.</li>
+        <li>Rent guaranteed every month (even if void).</li>
+        <li>No day-to-day maintenance.</li>
+        <li>No letting fee.</li>
+        <li>No management fee.</li>
+        <li>Rented to emergency homeless families.</li>
+        <li>Annual rent increase.</li>
+        <li>Hands-off, stress-free investment!</li>
+    </ol></b>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- first table -->
 
     <section class="section-article">
     <div class="container">
@@ -284,6 +582,302 @@
     </div>
 </section>
 
+<!-- second table -->
+  <section class="section-article">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+ <span class="h2 mb-3">
+                        Guaranteed Rent Rates 
+                    </span><p><b>We offer following rates, regardless of the area.</b></p>
+               
+
+                <div class="table-responsive">
+                    <table class="table table-bordered-inner align-middle">
+                        <thead>
+                            <tr class="table-light align-middle">
+                                <th scope="col color-mid-dark" style="width: 29.33333%"></th>
+                                <th scope="col color-mid-dark" style="width: 26.33333%">2 Bed Hoouse</th>
+                                <th scope="col color-mid-dark" style="width: 21.33333%">3 Bed House</th>
+				<th scope="col color-mid-dark" style="width: 58.33333%">4 Bed House</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">1st Year</td>
+                                <td class="h6">£600 pcm </td>
+                                <td class="h6">£750 pcm</td>
+				<td class="h6">£1,000 pcm</td>   
+                            </tr>
+
+ <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">2nd Year</td>
+                                <td class="h6">£615 pcm </td>
+                                <td class="h6">£770 pcm</td>
+				<td class="h6">£1,025 pcm</td>   
+                            </tr>
+
+ <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">3rd Year Year</td>
+                                <td class="h6">£630 pcm </td>
+                                <td class="h6">£790 pcm</td>
+				<td class="h6">£1,050 pcm</td>   
+                            </tr>
+<tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">4th Year Year</td>
+                                <td class="h6">£645 pcm </td>
+                                <td class="h6">£810 pcm</td>
+				<td class="h6">£1,075 pcm</td>   
+                            </tr>
+<tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">5th Year Year</td>
+                                <td class="h6">£660 pcm </td>
+                                <td class="h6">£830 pcm</td>
+				<td class="h6">£1,100 pcm</td>   
+                            </tr>
+                          
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- third table -->
+  
+  <section class="section-article">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="color-mid-dark mb-4">Areas Of Properties</h2>
+    <img src="https://i.imgur.com/EEqAdNG.png" alt="Property Image" class="property">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- third table -->
+<section class="section-article">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="color-mid-dark mb-4">Maintenance</h2>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered-inner align-middle">
+                        <thead>
+                            <tr class="table-light align-middle">
+                                <th scope="col color-mid-dark" style="width: 33.33333%">Responsibilities</th>
+                                <th scope="col color-mid-dark" style="width: 33.33333%">Landlord</th>
+                                <th scope="col color-mid-dark" style="width: 33.33333%">Greenco</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Structure</td>
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                            </tr>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Roof</td>
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                            </tr>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Damp</td>
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                            </tr>
+
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Gas Certificate/ Boiler Replacement</td>
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Electric Certificate/Electrical Rewire</td>
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                            </tr>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Tenant Damages</td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Flooring</td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Painting</td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Locks</td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Doors & Windows</td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Kitchen Repairs</td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Bathroom Leaks</td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-primary fw-bold h6 bg-tertiary">Plumbing Leak Repairs</td>
+                                <td class="h6"><img src="images/cross.png" alt="Greenco" width="30px"></td>   
+                                <td class="h6"><img src="images/tick.png" alt="Greenco" width="30px"></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    
+    .fact {
+      padding-top: 21px;
+      color: rgb(0, 0, 0) !important;
+      font-weight: bold;
+    }
+
+    .property {
+        border-radius: 0.6666666667rem;
+      display: block;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        
+        .fact {
+            padding-bottom: 25px;
+    padding-top: 25px;
+        }
+        .section-article .h2, .section-article h2 {
+            margin-bottom: 13px;
+        font-size: 24px !important;
+    }
+        .property {
+            max-width: 100%; /* Ensure images are not larger than the screen */
+            height: auto; /* Maintain aspect ratio */
+        }
+    }
+  </style>
+
+
+<section class="section-article">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="color-mid-dark mb-4"></h2>
+    
+
+    <div class="fact">
+        <h2 style="color: #000000;">Summary</h2>
+        <p style="color: #000000;">Greenco Property Group's strategy is the fastest 
+            growing investment in the UK at present because of the safety it offers an investor! 
+            If Guaranteed Rent is an investment strategy that you wish to follow,
+            you simply cannot risk making the above mistakes. The most important move for any
+             investor here is to enlist the help of professionals who have the expertise and industry 
+             relationships to create high quality social housing investments</p>
+    </div> 
+
+    <div class="fact">
+        <h2 style="color: #000000;">Solution</h2>
+        <div>
+            <p style="margin-top: -12px;">Greenco Property Group could be your solution:</p>
+       </div>
+        <p style="color: #000000; margin-top: 20px;"><img src="images/tick.png" alt="Greenco" width="30px">  We have expertise in the correct areas</p>
+        <p style="color: #000000;"><img src="images/tick.png" alt="Greenco" width="30px">  We do the due diligence on properties and know the providers exact specifications</p>
+        <p style="color: #000000;"><img src="images/tick.png" alt="Greenco" width="30px">  We have an experienced development team to complete the refurb to standards</p>
+        <p style="color: #000000;"><img src="images/tick.png" alt="Greenco" width="30px">  We have long term relationships with tried and trusted providers ready to take on our investments</p>
+        <P>By working with Greenco Property Group, you guarantee your success in this investment strategy. Your wealth is too important to take a risk on. Leave it to the professionals to grow your wealth for you.</P>
+ 
+    </div> 
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section class="hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="hero-text">
+            <h1 style="color: white; margin-bottom: 20px;">SWEET SPOTS</h1>
+            <p style="color: white; margin-bottom: 20px;">When a property has two separate reception rooms, it is
+                possible that one of the reception rooms can be considered
+                as a bedroom.
+                </p>
+                <p style="color: white; margin-bottom: 20px;">Therefore, you can achieve a higher rent.</p>
+                <p style="color: white; margin-bottom: 20px;">For example, the floor plan shown is a 2 bedroom property
+                    with 2 reception rooms and the 2 bedroom rate is £600 pcm</p>
+                    <p style="color: white; margin-bottom: 20px;">However, the Dining Room can be considered a bedroom
+                        and you would then achieve the 3 bedroom rate of £750 pcm.</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+            <picture class="img-offset">
+                <img srcset="images/SWEET SPOTS.jpg" src="images/SWEET SPOTS.jpg" alt="Greenco hero" width="587" height="454" style="border-radius: 20px !important; height: 100%;
+                width: 100%;">
+            </picture>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="section-article mb-5">
         <div class="container">
             <div class="row align-items-center">
@@ -319,13 +913,7 @@
                                     </p>
                                 </div>
 
-                                <div class="list-item__block" data-aos="zoom-in-bottom" data-aos-delay="300">
-                                    <h4>Sign our property management agreement</h4>
-                                    <p>
-                                        You can accept our guaranteed rental offer by signing our <a href="/property-management-agreement" target="_blank">property management agreement</a>.
-                                        This is the minimum price we'll pay you every month, if we beat our guarantee, you get more income.
-                                    </p>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -345,7 +933,7 @@
                                     <h4>List your property online</h4>
                                     <p>
                                         Even before the photos are complete we will generate a handcrafted listing that will have tenants inquiring in no time.
-                                        Your property will be listed on all major property sites, as well as social media, and the promotion costs are covered by us.
+                                        
                                     </p>
                                 </div>
                             </div>
@@ -371,7 +959,7 @@
                                     <h4>Find your perfect tenant</h4>
                                     <p>
                                         We choose the right tenant every time with the most comprehensive tenant screening &amp; background checks.
-                                        We also require all tenants to have insurance for extra piece of mind.
+                                       
                                     </p>
                                 </div>
 
@@ -391,6 +979,159 @@
     </div>
 </section>
 
+
+<style>
+    .cases-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px auto;
+    }
+  
+    .case {
+      width: 100%;
+      max-width: 340px;
+      margin: 10px;
+      background-color: #a2c533;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .case img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .case-content {
+      padding: 20px;
+      color: #fff;
+    }
+  
+    .case-title {
+      font-weight: 700;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  
+    .case-description {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  
+    @media (max-width: 768px) {
+      .cases-container {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .case {
+        max-width:90%;;
+      }
+    }
+  </style>
+  <section>
+  <div class="cases-container">
+    <div class="case">
+      <img src="https://i.imgur.com/n5Pea7z.jpg" alt="Middleton property">
+      <div class="case-content">
+        <div class="case-title">CASE #1</div>
+        <div class="case-description"><b>Middleton</b><br>
+          4 bedroom converted to 5<br>
+          bedroom achieved<br>
+          £1350PCM<br>
+        </div>
+      </div>
+    </div>
+  
+    <div class="case">
+      <img src="https://i.imgur.com/Os18IjJ.jpg" alt="Swinton property">
+      <div class="case-content">
+        <div class="case-title">CASE #2</div>
+        <div class="case-description"><b>Swinton</b><br>
+          3 bedroom converted into<br>
+          4 bedroom achieved<br>
+          £1000PCM<br>
+        </div>
+      </div>
+    </div>
+  
+    <div class="case">
+      <img src="https://i.imgur.com/9qQeAIT.jpg" alt="Wigan property">
+      <div class="case-content">
+        <div class="case-title">CASE #3</div>
+        <div class="case-description"><b>Wigan</b><br>
+          2 bedroom achieved<br>
+          £600PCM<br>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+
+
+  
+  
+  
+  
+<section>
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2>Apply Now!</h2>
+            </div>
+<div class="col-lg-5"  style="padding: 40px;">
+    <form role="form" class="get-a-quote" id="contact-form" method="post">
+      <div>
+            </div>
+            <div class="group-img">
+                <input type="text" name="Complete Name" placeholder="Full Name" required="">
+            </div>
+            <div class="group-img">
+                <input type="text" name="Email Address" placeholder="Email Address" required="">
+            </div>
+            <div class="group-img">
+                <input type="text" name="Phone No" placeholder="Phone No" required="">
+            </div>
+            <p>Are you happy to consider a long term lease of 5 years? </p>
+            <div class="d-flex align-items-center">
+                <div class="radio-button">
+                    <input type="radio" id="yes" name="fav_language" value="Yes">
+                    <label for="Virtual">Yes</label>
+                </div>
+                <div class="radio-button">
+                   <input type="radio" id="css" name="fav_language" value="NO">
+                    <label for="css">NO</label><br>
+                </div>
+            </div>
+            <div class="group-img">
+              <label for="vacant-properties">How many vacant properties do you have available to let?</label>
+              <input type="text" id="vacant-properties" name="Vacant Properties" placeholder="Enter vacant properties" required="">
+          </div>
+          <div class="group-img">
+              <label for="property-location">Where are your properties located?</label>
+              <input type="text" id="property-location" name="Property Location" placeholder="Enter properties location" required="">
+          </div>
+            <button type="submit" class="btn" style="background-color: #a2c533;
+            border-radius: 37px;
+            color: #000;
+            border: 3px solid #000;
+            font-weight: 700;">Get a free estimate</button>
+    </form>
+  </div>
+        </div>
+</section>
+
+  
+  
+  
+  
+  
+
+
+
+
     <section class="section-faq">
     <div class="container">
         <div class="row justify-content-center">
@@ -400,83 +1141,137 @@
 
             <div class="tabs">
                 <div class="col-12">
-                    <div class="tabs__headings" id="tabsHeadings">
+                    <!-- <div class="tabs__headings" id="tabsHeadings">
                         <div class="tabs__item">
                             <button class="btn btn-link active" data-toggle="tabsOne" role="button" aria-expanded="false" aria-controls="tabsOne">
                                 For Investors
                             </button>
                         </div>
 
-                        <div class="tabs__item">
+                         <div class="tabs__item">
                             <button class="btn btn-link" data-toggle="tabsTwo" role="button" aria-expanded="false" aria-controls="tabsTwo">
                                 For Residents
                             </button>
-                        </div>
-                    </div>
+                        </div> 
+                    </div> -->
     
                     <div class="tabs__content" id="tabsContent">
                         <!-- Investor FAQs -->
                         <div class="collapse show" id="tabsOne">
                             <div class="accordion accordion-flush" id="accordionFAQ">
-                                <div class="accordion-item">
-                                    <div class="accordion-header">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <strong>What does Greenco do and what services are included?</strong>
-                                        </button>
-                                    </div>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
-                                        <div class="accordion-body">
-                                            Greenco is a full-service residential property management company that uses artificial intelligence to enhance our property management services. We aim to place tenants in properties in record time and at the best price. We do this by leveraging our proprietary technology, which compares millions of data points to identify the best price, within the optimal leasing time, and from the best quality of tenant. We offer services like regular maintenance, bi-annual inspections, and 24/7 support. Uniquely, we also guarantee rental income every month to the property owner, even before a tenant is placed.
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="accordion-item">
-                                    <div class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <strong> How much does Greenco charge?</strong>
-                                        </button>
-                                    </div>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                        <div class="accordion-body">
-                                            We charge a flat fee of £199 per property that we manage. If you have mutliple properties, we offer a discount.
-                                            To learn more about our pricing,<a href="#">Contact Us Now</a>.
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="accordion-item">
-                                    <div class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            <strong>How do you make sure you get the best tenant for my property?</strong>
-                                        </button>
-                                    </div>
-                                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                        <div class="accordion-body">
-                                            At Greenco, we are committed to finding individuals who will cherish your home as much as you do. To uphold this mission, we never compromise on quality. Our comprehensive Resident vetting process includes meticulous background and credit checks, thorough income and employment verification, reference assessments, and a personalized interview conducted by our experienced Tenant Onboarding Specialist. Rest assured, we leave no stone unturned in ensuring that your home is entrusted to responsible and reliable tenants.
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="accordion-item">
-                                    <div class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            <strong>Do you accept furnished properties?</strong>
-                                        </button>
-                                    </div>
-                                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                                        <div class="accordion-body">
-                                            Greenco homes are offered unfurnished. We strongly advise against self-furnishing. Although we acknowledge your impeccable taste, it's worth noting that opting for furnished homes often command lower rental prices compared to their unfurnished counterparts. Moreover, selecting an unfurnished home helps prevent potential issues and frustrations in the future, particularly if any damage occurs. Our goal is to ensure your experience is seamless and satisfactory!
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                         
+       <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Do I Have To Provide Furniture?</strong>
+                </button>
+            </div>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    No, you don't have to provide furniture. The Housing Association provides it for you.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>How much is buildings insurance?</strong>
+                </button>
+            </div>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    On average, buildings insurance is double the standard cost, amounting to around £600.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>What type of tenants?</strong>
+                </button>
+            </div>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    The properties are rented to emergency homeless families.
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue with unique IDs for the remaining accordion items -->
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Are inspections carried out?</strong>
+                </button>
+            </div>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    Yes, inspections are carried out on a 3-month basis.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <strong>Returned in original condition?</strong>
+                </button>
+            </div>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    The housing association will fix any tenant damage before handing the property back to the landlord.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <strong>Can I sell the house during the lease?</strong>
+                </button>
+            </div>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    Yes, you can sell the house during the lease, but the sale must occur with the existing contract in place.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <strong>Can I terminate the lease?</strong>
+                </button>
+            </div>
+            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    No, termination of the lease is not allowed during the 5-year period.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <strong>Can I get a mortgage?</strong>
+                </button>
+            </div>
+            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body">
+                    Yes, you can get a mortgage; however, not all lenders will offer on a fixed 5-year lease. Those that do may charge higher interest rates.
+                </div>
+            </div>
+        </div>
+
+    </div>
     
                         <!-- Resident FAQs -->
                         <div class="collapse" id="tabsTwo">
                             <div class="accordion accordion-flush" id="accordionFAQ2">
-                                <div class="accordion-item">
+                                <div class="accordion-item">Do I Have To Provide Furniture?
                                     <div class="accordion-header">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneAlt" aria-expanded="true" aria-controls="collapseOneAlt">
                                             <strong>What are the benefits of renting a Greenco home?</strong>
@@ -709,7 +1504,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12"> 
-                    <h2>See how much your property can generate</h2>
+                    <h2>Ready to Scale Your Rental Income with a <green>5-Year Guarantee?</green></h2>
                     <h3>Identify the best rental price for your property.</h3>
     
                     <div class="subscribe">
@@ -722,7 +1517,7 @@
                                 <input type="text" class="form-control subscribeInput" placeholder="Enter your property address" aria-label="Property Address">
                             </div>
     
-                            <a class="btn btn-primary" href="/estimate" role="button" type="submit">
+                            <a class="btn btn-primary" href="#" role="button" type="submit">
                                 <span class="d-none d-lg-inline-block">Get a free estimate</span>
                                 <span class="d-lg-none">Estimate</span>
                             </a>
@@ -745,16 +1540,16 @@
                         <img src="https://Greenco.co.uk/images/footerLogo.png" alt="Greenco" width="150" height="47">
                     </a>
                     <ul>
-                        <li><a href="/tenants">  </a></li>
-                        <li><a href="/tenants"> 0330 118 0401</a></li>
-                        <li><i class="icon-envelope"></i> <a href="mailto:hello@Greenco.co.uk">hello@Greenco.co.uk</a></li>
+                        <li><a href="#">  </a></li>
+                        <li><a href="tel:03301180401"> 0330 118 0401</a></li>
+                        <li><i class="icon-envelope"></i> <a href="mailto:hello@greenco.co.uk">hello@greenco.co.uk</a></li>
                     </ul>
                 </div>
     
                 <div class="col-md-3 col-6 footer__item">
                     <h5><span>Properties</span></h5>
                     <ul>
-                        <li><a href="/about">About</a></li>
+                        <li><a href="https://greenco.co.uk/about">About</a></li>
                     </ul>
                 </div>
     
@@ -771,10 +1566,6 @@
                 </div>
         
                 <div class="col-md-3 col-6 footer__item">
-                    <!-- <h5>
-                        <i class="fa fa-facebook-square"></i>
-                        <span>Head Office</span>
-                    </h5> -->
                     <a class="social" href="https://twitter.com/Greencoproperty">
                         <img src="images/twitter x.svg" alt="Greenco" width="25" height="25">
                     </a>
@@ -787,13 +1578,6 @@
                     <a class="social" href="https://www.instagram.com/Greencoproperties">
                         <img src="images/instagram.svg" alt="Greenco" width="25" height="25">
                     </a>
-                    <!-- <p><b>British Columbia</b></p>
-                    <p>
-                        <a href="#" target="_blank">
-                            1st Floor - 555 Burrard Street, Vancouver<br>
-                            BC V7X 1M8 Canada
-                        </a>
-                    </p> -->
               </div>
             </div>
         </div>
@@ -805,16 +1589,6 @@
                 <div class="col-md-3 postfooter__item">
                     <span>© Greenco 2019. All Rights Reserved.</span>
                 </div>
-
-                <!-- <div class="col-md-6 text-md-center postfooter__item">
-                    <span>Our services are subject to our <a href="/terms-and-conditions">terms of use</a> and <a href="/privacy-policy">privacy policy</a></span>
-                </div> -->
-
-                <!-- <div class="col-md-3 text-md-end postfooter__item">
-                    <a class="navbar-brand" href="/">
-                        <img src="https://Greenco.co.uk/images/footerLogo.png" alt="Greenco" width="140" height="47">
-                    </a>
-                </div> -->
             </div>
         </div>
     </div>
@@ -832,132 +1606,7 @@
 </script>
 <script src="js/app.min.js"></script>
 
-<!-- Google map -->
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuieFIImQWd-U_B6px6ZV9Q4M12h8oVxg&amp;libraries=places&amp;callback=initMap&amp;v=weekly&amp;language=en" async="" defer="">
-</script> -->
-<!-- <script>
-    function initMap() {
-        // Styles a map.
-        let storeLocation;
-        let showStreetView;
-
-        if (typeof addressGoogleMap === 'undefined') {
-            let addressGoogleMap;
-
-            storeLocation = {
-                lat: 42.7375431,
-                lng: -84.5075483
-            };
-        } else {
-            storeLocation = addressGoogleMap;
-        }
-
-        let mapDiv = document.getElementById('map');
-
-        if (mapDiv) {
-            let map = new google.maps.Map(mapDiv, {
-                center: {
-                    lat: storeLocation.lat - 0.0004,
-                    lng: storeLocation.lng + 0.0007
-                },
-                zoom: 17,
-                scrollwheel: false,
-                mapTypeControl: false
-            });
-
-            let marker = new google.maps.Marker({
-                position: storeLocation,
-                map: map,
-                title: 'The Propper',
-                icon: '/images/dist/marker.svg' // null = default icon
-            });
-        }
-
-        //streetview find closest street view
-        if (showStreetView) {
-
-            let svService = new google.maps.StreetViewService();
-            let panoRequest = {
-                location: storeLocation,
-                preference: google.maps.StreetViewPreference.NEAREST,
-                radius: 50,
-                source: google.maps.StreetViewSource.OUTDOOR
-            };
-            let panorama = null;
-
-            let findPanorama = function(radius) {
-                panoRequest.radius = radius;
-                svService.getPanorama(panoRequest, function(panoData, status){
-                    if (status === google.maps.StreetViewStatus.OK) {
-                        if (panorama) {
-                            // Clear the previous panorama if it exists
-                            panorama.setVisible(false);
-                            panorama = null;
-                        }
-                        panorama = new google.maps.StreetViewPanorama(
-                            document.getElementById('streetViewContainer'),
-                            {
-                                pano: panoData.location.pano,
-                            });
-                        panorama.setPov({
-                            heading: 270,
-                            pitch: 0,
-                            zoom: 1
-                        });
-                    } else {
-                        //Handle other statuses here
-                        if (radius > 200) {
-                            console.log("Street View is not available");
-                        } else {
-                            findPanorama(radius + 5);
-                        }
-                    }
-                });
-            };
-
-            //50m radius of search
-            findPanorama(50);
-        }
-    }
-</script> -->
-
-<!-- <script>
-    // Google conversion helpers
-    function gtag_report_conversion_estimate(url) {
-        var callback = function () {
-            if (typeof(url) != 'undefined') {
-                window.location = url;
-            }
-        };
-
-        gtag('event', 'conversion', {
-            'send_to': 'AW-11092219804/oAwnCK_56LIYEJyvl6kp',
-            'event_callback': callback
-        });
-        return false;
-    }
-
-    function gtag_report_conversion(url) {
-        var callback = function () {
-            if (typeof(url) != 'undefined') {
-                window.location = url;
-            }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-11092219804/qVL9CLL56LIYEJyvl6kp',
-            'event_callback': callback
-        });
-        return false;
-    }
-
-</script> -->
-
-    <!-- Start of Greenco Zendesk Widget script -->
-    <!-- <script id="ze-snippet" src="js/snippet.js"> </script> -->
-    <!-- End of Greenco Zendesk Widget script -->
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+<!-- Email Js -->
+<script src="script.js"></script>
 
 </body></html>
