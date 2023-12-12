@@ -1,18 +1,32 @@
-const form = document.querySelector ("form");
+"use strict";
 
-Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "sachintnm001@gmail.com",
-    Password : "DD5B22FFA888D5098594195243386849C9B2",
-    To : 'sachintnm001@gmail.com',
-    From : "sachintnm001@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+const forms = document.forms;
+if (forms.length) {
+  for (const form of forms) {
+    form.addEventListener('submit', formSubmitAction);
+  }
+}
 
-form.addEventListener("submit", (e) => {
-e.preventDefault();
-? sendEmail();
-});
+async function formSubmitAction(e) {
+  e.preventDefault();
+  const form = e.target;
+  const formAction = form.getAttribute('action') ? form.getAttribute('action').trim() : "#";
+  const formMethod = form.getAttribute('method') ? form.getAttribute('method').trim() : "GET";
+  const formData = new FormData(form);
+
+  form.classList.add('form-sending');
+
+  const response = await fetch(formAction, {
+    method: formMethod,
+    body: formData
+  });
+
+  if (response.ok) {
+    alert('Form sent!');
+    form.classList.remove('form-sending');
+    form.reset();
+  } else {
+    alert('Error');
+    form.classList.remove('form-sending');
+  }
+}
