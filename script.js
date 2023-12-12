@@ -1,3 +1,5 @@
+const form = document.querySelector ("form");
+
 Email.send({
     Host : "smtp.elasticemail.com",
     Username : "sachintnm001@gmail.com",
@@ -10,3 +12,7 @@ Email.send({
   message => alert(message)
 );
 
+form.addEventListener("submit", (e) => {
+e.preventDefault();
+? sendEmail();
+});
